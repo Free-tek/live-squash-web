@@ -1,0 +1,148 @@
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>FREEApp  - Register</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="title" content="">
+        <meta name="author" content="CssNinja">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="CssNinja">
+        <link rel="icon" type="image/png" href="https://cssninja.io/themes/cssninja/assets/images/logo/cssninja-icon.png">
+        <link href="https://cssninja.io/themes/cssninja/assets/css/bulma.css" rel="stylesheet">
+        <link href="https://cssninja.io/themes/cssninja/assets/css/core_ninja.css" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>        <link href="https://cssninja.io/themes/cssninja/assets/css/icons.min.css" rel="stylesheet">
+
+        
+    </head>
+
+    <body>
+        <!-- Pageloader -->
+        <div class="pageloader"></div>
+        <div class="infraloader is-active"></div>
+        
+        <!-- Wrapper -->
+<div class="login-wrapper columns is-gapless">
+
+
+
+    <!-- Form section -->
+    <div class="column is-4">
+        <div class="hero is-fullheight">
+            <!-- Header -->
+            <div class="hero-heading">
+                <div class="section intro-section has-text-centered">
+                   <a href="https://cssninja.io"><img class="top-logo" src="freeapp.png" alt="Brand"></a> 
+                    <div id="signup-intro" class="intro-text has-text-centered animated preFadeInLeft fadeInLeft">
+                        <div class="intro-sub">Fill in your details.</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-8 is-offset-2">
+
+                            
+    <form data-request="onRegister">
+    <div id="signup-form" class="login-form animated preFadeInLeft fadeInLeft">
+    
+        <div id="loginTaken" class="info-text pb-10" style="display: none">
+            <i class="sl sl-icon-lock pr-5"></i> Sorry, that email address already exists.
+        </div>
+    
+        <div class="field pb-10">
+            <div class="control">
+                <input id="registerName" class="input is-large" type="text" name="name" placeholder="Enter your full name">
+            </div>
+        </div>
+        <div class="field pb-10">
+            <div class="control">
+                <input id="registerEmail" class="input is-large" type="email" name="email" placeholder="Enter your email" 
+                data-request="onCheckEmail"
+                data-request-success="$('#loginTaken').toggle(!!data.isTaken)"
+                data-track-input
+                required>
+            </div>
+        </div>
+        <div class="field pb-30">
+            <div class="control">
+                <input id="registerPassword" class="input is-large" type="password" name="password" placeholder="Choose a password">
+            </div>
+        </div>
+        <p class="control">
+            <button class="button button-cta primary-btn btn-align-lg btn-outlined is-bold is-fullwidth rounded raised no-lh will-load">Sign up</button>
+        </p>
+        <p <div class="already">
+                        <span>Already have an account ?</span>
+                        <a href="login.html" class="button btn-align btn-outlined is-bold strong-btn rounded">Login</a>
+                    </div> </p>
+    </div>
+</form>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!-- /Form section 
+
+    <!-- Image section (hidden on mobile) 
+    <div class="column login-column is-8 is-hidden-mobile hero-banner">
+        <div class="hero signup-hero is-fullheight is-theme-primary is-relative">
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <h1 class="title is-2 light-text">
+                        Join the community
+                    </h1>
+                    <h3 class="subtitle is-6 light-text">
+                        Join our community of customers and get access to our support forum. We'll be glad to help you and to answer your questions.
+                    </h3>-->
+                    <!-- App mockup 
+                    <img class="mockup" src="https://cssninja.io/themes/cssninja/assets/images/ui/ninja-landings.png" alt=""> -->
+                    <!-- Link to login page
+                    <div class="already">
+                        <span>Already have an account ?</span>
+                        <a href="login.html" class="button btn-align btn-outlined is-bold light-btn rounded">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+ 
+    <div class="already">
+                        <span>Already have an account ?</span>
+                        <a href="login.html" class="button btn-align btn-outlined is-bold strong-btn rounded">Login</a>
+                    </div>
+    <!-- /Image section -->
+
+</div>
+<!-- /Wrapper-->        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-112735660-1', 'auto');
+            ga('send', 'pageview');
+</script>
+        
+        <!-- Scripts -->
+        <script src="https://cssninja.io/themes/cssninja/assets/js/core/jquery.min.js"></script>
+        <script src="https://cssninja.io/themes/cssninja/assets/js/core/modernizr.min.js"></script>
+
+        <script src="https://cssninja.io/themes/cssninja/assets/js/main.js"></script>
+
+        <script src="https://cssninja.io/themes/cssninja/assets/js/pages/auth.js"></script>
+        <script src="/modules/system/assets/js/framework.js"></script>
+<script src="/modules/system/assets/js/framework.extras.js"></script>
+<link rel="stylesheet" property="stylesheet" href="/modules/system/assets/css/framework.extras.css">
+            </body>
+</html>
